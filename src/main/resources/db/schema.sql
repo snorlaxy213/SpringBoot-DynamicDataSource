@@ -34,3 +34,9 @@ CREATE TABLE product_slave_gamma.product(
   price DOUBLE(10,2) NOT NULL DEFAULT 0
 );
 INSERT INTO product_slave_gamma.product (name, price) VALUES('slaveGamma', '1');
+
+-- Drop Table
+DROP DATABASE IF EXISTS product_master;
+DROP DATABASE IF EXISTS product_slave_alpha;
+DROP DATABASE IF EXISTS product_slave_beta;
+DROP DATABASE IF EXISTS product_slave_gamma;

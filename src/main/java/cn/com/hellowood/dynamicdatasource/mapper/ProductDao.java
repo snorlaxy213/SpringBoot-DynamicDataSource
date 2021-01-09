@@ -16,13 +16,13 @@ import java.util.List;
 
 @Mapper
 public interface ProductDao {
-    Product select(@Param("id") long id);
+    Product select(@Param("id") Long id);
 
     Integer update(Product product);
 
     Integer insert(Product product);
 
-    Integer delete(long productId);
+    Integer delete(Long productId);
 
     List<Product> getAllProduct();
 }
