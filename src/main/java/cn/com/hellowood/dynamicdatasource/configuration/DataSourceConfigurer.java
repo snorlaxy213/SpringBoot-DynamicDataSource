@@ -110,7 +110,7 @@ public class DataSourceConfigurer {
      * @return the sql session factory bean
      */
     @Bean
-    @ConfigurationProperties(prefix = "mybatis")
+//    @ConfigurationProperties(prefix = "mybatis")
     public SqlSessionFactoryBean sqlSessionFactoryBean() throws IOException {
         SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
         // Here to config mybatis
